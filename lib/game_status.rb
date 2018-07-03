@@ -14,5 +14,6 @@ WIN_COMBINATIONS = [
   [0,4,8], # left_diagonal
   [6,4,2]  # right_diagonal
 ]
+
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
