@@ -28,3 +28,7 @@ def won?(board)
    position_1 == position_2 && position_2 == position_3 && position_taken?(board, win_index_1) #detect returns first element (position_1) & make sure position is taken (that it's either an X or O).
   end
 end
+
+def position_taken?(board)
+  board.all? {|i| i == "X" || i == "O "}
+end
