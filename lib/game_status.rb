@@ -29,10 +29,6 @@ def won?(board)
   end
 end
 
-def position_taken?(board)
-  board.all? {|i| i == "X" || i == "O "}
-end
-
 def full?(board)
   board.all? {|i| i == "X" || i == "O"}
 end
